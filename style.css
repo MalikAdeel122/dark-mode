@@ -1,0 +1,309 @@
+*,
+html,
+body,
+div,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+label,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+div,
+img,
+button,
+input,
+textarea,
+select {
+    outline: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+a,
+img,
+button,
+input {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background: none;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg: #f1f5ff;
+    --color-card: #ffffff;
+    --color-primary: #1e5ef3;
+    --color-primary-light: #3d77ff;
+    --color-text: #565656;
+    --color-title: #232429;
+    --color-white: #ffffff;
+    --box-shadow: 0px 4px 15px 5px rgba(73, 72, 72, 0.655);
+    --background-btn:
+        linear-gradient(90deg, rgb(255, 7, 243) 0%, rgb(3, 130, 193) 100%);
+}
+
+/* change theme colors */
+body.dark_theme {
+    --color-bg: #2f3034;
+    --color-card: #232429;
+    --color-text: #747474;
+    --color-title: #fff;
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    /* margin-bottom: 150px; */
+}
+
+.profile .card {
+    width: 450px;
+    background-color: var(--color-bg);
+    border-radius: 12px;
+    /* border: 4px solid transparent;
+    background:
+        linear-gradient(to right, white, white),
+        linear-gradient(to right, red, blue);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    padding: 30px; */
+    box-shadow: var(--box-shadow);
+    position: relative;
+    padding: 20px;
+}
+
+
+.profile .card .dark_theme {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    border-radius: 20px;
+    /* background-color: var(--color-text); */
+    color: var(--color-title);
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .card .dark_theme:hover {
+    color: var(--color-text);
+}
+
+
+
+.profile .card .card_img {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .card .card_img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+
+    background:
+        linear-gradient(to right, rgb(2, 229, 254), #5ad005),
+        linear-gradient(to right, rgb(255, 213, 0), rgb(255, 0, 238));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    cursor: pointer;
+}
+
+.profile_text {
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.profile_text .username {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--color-title);
+}
+
+.profile_text .about {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-title);
+    margin-bottom: 10px;
+
+}
+
+.profile_text .detail {
+    color: var(--color-title);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.btn_hair {
+    min-width: 200px;
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 12px;
+    background: var(--background-btn);
+    /* background-color: #009eff; */
+    font-size: 24px;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.btn_hair:hover {
+    box-shadow: var(--box-shadow);
+
+}
+
+.social_icon {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    cursor: pointer;
+}
+
+.social_icon .social_data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.bg-color {
+    border-radius: 30px;
+    background-color: var(--color-white);
+    /* background: linear-gradient(60deg, rgb(22, 10, 49) 0%, rgb(221, 0, 255) 100%); */
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--color-title);
+    margin-bottom: 6px;
+
+}
+
+.bg-color .icon-size {
+    font-size: 28px;
+    color: #fff;
+}
+
+.bg-color .facebook {
+    color: #00a5e8;
+}
+
+.bg-color .instagram {
+    color: #ff00c9;
+
+}
+
+.bg-color .linkedin {
+    color: #009eff;
+}
+
+.bg-color .twitter {
+    color: #00b5ff;
+}
+
+.like {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-title);
+}
+
+.folow {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-title);
+}

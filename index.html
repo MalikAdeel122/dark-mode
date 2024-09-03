@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end font -->
+
+    <!--  fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/8b670cd186.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="profile">
+      <div class="card">
+        <i class="fas fa-moon dark_theme" id="darkMode"></i>
+
+        <!-- <div class="icon" > -->
+        <!-- <i class="fas fa-sun"></i> -->
+        <!-- </div> -->
+        <div class="card_img">
+          <img src="image.jpg" />
+        </div>
+        <div class="profile_text">
+          <!-- <h1 class="username">Malik Adeel</h1> -->
+          <h1 class="username">Malik Adeel</h1>
+          <h4 class="about">Graphic Designer</h4>
+          <p class="detail">
+            I have more than 2 years of Web development and Graphic design
+            experience.
+          </p>
+          <button class="btn_hair" type="submit">Hire Me</button>
+          <div class="social_icon">
+            <div class="social_data">
+              <div class="bg-color">
+                <i class="fa-brands fa-facebook icon-size facebook"></i>
+              </div>
+              <h2 class="like">10.2k</h2>
+              <p class="folow">Follower</p>
+            </div>
+            <div class="social_data">
+              <div class="bg-color">
+                <i class="fa-brands fa-instagram icon-size instagram"></i>
+              </div>
+              <h2 class="like">12.9k</h2>
+              <p class="folow">Follower</p>
+            </div>
+            <div class="social_data">
+              <div class="bg-color">
+                <i class="fa-brands fa-linkedin icon-size linkedin"></i>
+              </div>
+              <h2 class="like">6.2k</h2>
+              <p class="folow">Follower</p>
+            </div>
+            <div class="social_data">
+              <div class="bg-color">
+                <i class="fa-brands fa-twitter icon-size twitter"></i>
+              </div>
+              <h2 class="like">4.5k</h2>
+              <p class="folow">Follower</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // let body = document.querySelectorAll("body");
+      // let card = document.querySelector(".card");
+      let dark = document.getElementById("darkMode");
+      // console.log("icons..", body);
+
+      dark.addEventListener("click", () => {
+        document.body.classList.toggle("dark_theme");
+        if (document.body.classList.contains("dark_theme")) {
+          dark.classList.replace("fa-moon", "fa-sun");
+        } else {
+          dark.classList.replace("fa-sun", "fa-moon");
+        }
+      });
+    </script>
+  </body>
+</html>
